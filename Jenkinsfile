@@ -17,7 +17,7 @@ pipeline {
       }
     }
 
-     stage('Deployment')      {
+     stage('Deployment develop')      {
          
          environment {
         CLIENT_ID = credentials('dev-client-d')
@@ -27,7 +27,7 @@ pipeline {
             bat 'mvn -U -V -e -B -DskipTests deploy -Pdev -DmuleDeploy -Duser=%PLATFORM_CRED_USR% -Dpswd=%PLATFORM_CRED_PSW% -Danypoint.platform.client_id=%CLIENT_ID% -Danypoint.platform.client_secret=%CLIENT_SECRET%'
       }
     }
-	 stage('Deployment')      {
+	 stage('Deployment qa')      {
          
          environment {
         CLIENT_ID = credentials('qa-client-id')
