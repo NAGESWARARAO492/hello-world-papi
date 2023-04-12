@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
             </http:error-response>
         </http:listener>
         <apikit:router config-ref="ps-test-api-config" />
-		<error-handler ref="error-handler" />
+		
     </flow>
 	<flow name="ps-test-api-console">
         <http:listener path="/console/*" config-ref="http-listener-config">

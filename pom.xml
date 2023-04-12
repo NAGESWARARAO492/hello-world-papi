@@ -188,12 +188,7 @@
 			<version>1.6.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		<dependency>
-			<groupId>d35f44cb-0b0e-4cbc-97fc-f6684c56e192</groupId>
-			<artifactId>mule-common-libraries</artifactId>
-			<version>1.0.0</version>
-			<classifier>mule-plugin</classifier>
-		</dependency>
+		
 		<dependency>
 			<groupId>com.mulesoft.modules</groupId>
 			<artifactId>mule-secure-configuration-property-module</artifactId>

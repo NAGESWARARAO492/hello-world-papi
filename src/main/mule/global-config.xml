@@ -58,8 +58,5 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	<tls:key-store type="jks" path="${tls.path}" alias="${tls.alias}" keyPassword="${tls.keypassword}" password="${tls.password}" />
 	
 	</tls:context>
-	<import doc:name="Import" doc:id="d173d30b-66b3-4687-93d3-56f73db682fb" file="common-global.xml" doc:description="common-global" />
-    <import doc:name="Import" doc:id="77184b6d-c318-4264-b9b5-b308e229d6c5" doc:description="error-handler" file="error-handler.xml" />
-    <import doc:name="Import" doc:id="9b27a068-caa1-437e-97e9-d7995f9ae33a" doc:description="mule-common-logging" file="mule-common-logging.xml" />
-    
+   
 </mule>
