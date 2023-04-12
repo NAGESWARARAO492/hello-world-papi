@@ -43,8 +43,8 @@
 								<properties>
 									<mule.env>qa</mule.env>
 									<api.id>18618911</api.id>
-									<anypoint.platform.client_id>99d9f03688da40b5b85b6ec2859c77ee</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>97e58Ae369754f9B8D5A651c32256495</anypoint.platform.client_secret>
+									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -193,6 +193,12 @@
 			<groupId>com.mulesoft.modules</groupId>
 			<artifactId>mule-secure-configuration-property-module</artifactId>
 			<version>1.2.3</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>d35f44cb-0b0e-4cbc-97fc-f6684c56e192</groupId>
+			<artifactId>mule-common-libraries</artifactId>
+			<version>1.0.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
