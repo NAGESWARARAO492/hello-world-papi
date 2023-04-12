@@ -27,6 +27,16 @@ pipeline {
             bat 'mvn -U -V -e -B -DskipTests deploy -Pdev -DmuleDeploy -Duser=%PLATFORM_CRED_USR% -Dpswd=%PLATFORM_CRED_PSW% -Danypoint.platform.client_id=%CLIENT_ID% -Danypoint.platform.client_secret=%CLIENT_SECRET%'
       }
     }
+	 stage('Deployment')      {
+         
+         environment {
+        CLIENT_ID = credentials('qa-client-id')
+        CLIENT_SECRET = credentials('qa-client-secret')
+      }
+         steps {
+            bat 'mvn -U -V -e -B -DskipTests deploy -Pqa -DmuleDeploy -Duser=%PLATFORM_CRED_USR% -Dpswd=%PLATFORM_CRED_PSW% -Danypoint.platform.client_id=%CLIENT_ID% -Danypoint.platform.client_secret=%CLIENT_SECRET%'
+      }
+    }
     
   }
 }
