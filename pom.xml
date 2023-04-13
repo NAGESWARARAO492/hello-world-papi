@@ -149,17 +149,14 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<server>
-						<id>MuleRepository</id>
-						<username>PREM4604</username>
-						<password>Prowess@123</password>
-					</server>
-					
 					<cloudHubDeployment>
-
-
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
+						<server>
+							<id>anypoint-exchange-v3</id>
+							<username>PREM4604</username>
+							<password>Prowess@123</password>
+						</server>
 						<username>${user}</username>
 						<password>${pswd}</password>
 						<properties>
