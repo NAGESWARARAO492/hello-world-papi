@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ae377efa-a2a7-43a8-ba34-bb85de1f401f</groupId>
@@ -9,15 +11,16 @@
 
 	<name>hello-world-papi</name>
 
-	<description/>
+	<description />
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.reporting.outputEncoding>UTF-8
+		</project.reporting.outputEncoding>
 
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
 		<munit.version>2.3.9</munit.version>
-		<tags/>
+		<tags />
 		<categories>[]</categories>
 		<fields>[]</fields>
 	</properties>
@@ -43,8 +46,10 @@
 								<properties>
 									<mule.env>qa</mule.env>
 									<api.id>18618911</api.id>
-									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
+									<anypoint.platform.client_id>${anypoint.platform.client_id}
+									</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}
+									</anypoint.platform.client_secret>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -96,8 +101,10 @@
 								<properties>
 									<mule.env>dev</mule.env>
 									<api.id>18603598</api.id>
-									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
+									<anypoint.platform.client_id>${anypoint.platform.client_id}
+									</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}
+									</anypoint.platform.client_secret>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -142,15 +149,25 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<server>
+						<id>MuleRepository</id>
+						<username>PREM4604</username>
+						<password>Prowess@123</password>
+					</server>
+					
 					<cloudHubDeployment>
+
+
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${user}</username>
 						<password>${pswd}</password>
 						<properties>
 							<http.port>8081</http.port>
-							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
-							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com/</anypoint.platform.analytics_base_uri>
+							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/
+							</anypoint.platform.base_uri>
+							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com/
+							</anypoint.platform.analytics_base_uri>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
@@ -188,7 +205,7 @@
 			<version>1.6.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.mulesoft.modules</groupId>
 			<artifactId>mule-secure-configuration-property-module</artifactId>
