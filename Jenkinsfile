@@ -3,7 +3,7 @@ pipeline {
   agent any
   environment {
         PLATFORM_CRED = credentials('platform-cred')
-        MVN_SET = credentials('maven_settings')
+       
       }
   stages {
     stage('Build') {
