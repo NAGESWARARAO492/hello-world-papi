@@ -153,8 +153,8 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
 						
-						<username>${user}</username>
-						<password>${pswd}</password>
+						<username>${username}</username>
+						<password>${password}</password>
 						<properties>
 							<http.port>8081</http.port>
 							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/
