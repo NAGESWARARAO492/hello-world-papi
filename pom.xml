@@ -98,6 +98,7 @@
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
+								
 								<properties>
 									<mule.env>dev</mule.env>
 									<api.id>18603598</api.id>
