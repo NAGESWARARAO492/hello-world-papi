@@ -1,5 +1,5 @@
 api:
-  autodiscoveryId: "123456"  
+  id: "18603598"  
 
 http:
   host: "0.0.0.0"
