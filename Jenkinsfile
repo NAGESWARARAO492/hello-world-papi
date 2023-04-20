@@ -3,12 +3,13 @@ pipeline {
   agent any
   environment {
         PLATFORM_CRED = credentials('platform-cred')
+        MAVEN_CRED = credentials('maven-settings')
         
       }
   stages {
     stage('Build') {
       steps {
-            bat 'mvn -s mvn-settings.xml clean install'
+            bat 'mvn -s settings.xml clean install'
       }
     }
 
