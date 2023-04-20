@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-            bat 'mvn -B -U -e -V clean -DskipTests package'
+          \\assuming mvn-settings.xml is at root/current folder, otherwise provide absolute or relative path
+          sh 'mvn -s settings.xml clean install'
       }
     }
 
@@ -18,7 +19,7 @@ pipeline {
       }
     }
 
-     stage('Deployment develop')      {
+     stage('Deployment dev')      {
          
          environment {
         CLIENT_ID = credentials('dev-client-d')

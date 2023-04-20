@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ae377efa-a2a7-43a8-ba34-bb85de1f401f</groupId>
@@ -9,7 +11,7 @@
 
 	<name>hello-world-papi</name>
 
-	<description/>
+	<description />
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8
@@ -18,9 +20,10 @@
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
 		<munit.version>2.3.9</munit.version>
-		<tags/>
+		<tags />
 		<categories>[]</categories>
 		<fields>[]</fields>
+
 	</properties>
 	<profiles>
 		<profile>
@@ -151,7 +154,6 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-
 						<username>${username}</username>
 						<password>${password}</password>
 						<properties>
@@ -198,6 +200,13 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
+			<groupId>ae377efa-a2a7-43a8-ba34-bb85de1f401f</groupId>
+			<artifactId>mule-common-libraries</artifactId>
+			<version>1.0.0</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+
+		<dependency>
 			<groupId>org.mule.connectors</groupId>
 			<artifactId>mule-sockets-connector</artifactId>
 			<version>1.2.3</version>
@@ -224,7 +233,6 @@
 	</dependencies>
 
 	<repositories>
-
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
@@ -239,7 +247,6 @@
 		</repository>
 
 	</repositories>
-
 	<pluginRepositories>
 		<pluginRepository>
 			<id>mulesoft-releases</id>
