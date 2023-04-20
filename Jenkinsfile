@@ -8,8 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-          \\assuming mvn-settings.xml is at root/current folder, otherwise provide absolute or relative path
-          sh 'mvn -s settings.xml clean install'
+            bat 'mvn -s settings.xml clean install'
       }
     }
 
