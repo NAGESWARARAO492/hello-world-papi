@@ -6,11 +6,7 @@ pipeline {
 		MAVEN_CRED = credentials('maven-settings')
       }
   stages {
-  stage('mvn test settings') {
-            steps {
-                sh 'mvn -s $MAVEN_CRED help:effective-settings'
-            }
-        }
+  
     stage('Build') {
       steps {
             bat 'mvn -B -U -e -V clean -DskipTests package'
