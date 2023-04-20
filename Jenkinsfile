@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-            bat 'mvn -s settings.xml clean install'
+            bat 'mvn -s mvn-settings.xml clean install'
       }
     }
 
